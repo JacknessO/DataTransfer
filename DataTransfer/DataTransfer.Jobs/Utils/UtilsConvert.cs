@@ -97,7 +97,6 @@ namespace DataTransfer.Jobs.Utils
             }
             b[l - 1] = Convert.ToByte(s, 16);
             return Encoding.GetEncoding(936).GetString(b);
-        }
-
+        } 
     }
 }
