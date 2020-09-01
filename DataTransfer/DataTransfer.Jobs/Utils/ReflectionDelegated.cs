@@ -18,7 +18,7 @@ namespace DataTransfer.Jobs.Utils
     }
 
     /// <summary>
-    ///     创建IGetValue或者ISetValue实例的工厂方法类
+    ///创建IGetValue或者ISetValue实例的工厂方法类
     /// </summary>
     public static class ReflectionDelegated
     {
