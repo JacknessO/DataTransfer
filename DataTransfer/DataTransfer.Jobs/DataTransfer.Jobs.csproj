@@ -30,8 +30,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BFES.DataAccess">
+      <HintPath>..\Dll\BFES.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpConfig">
+      <HintPath>..\Dll\SharpConfig.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -40,14 +49,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Common\Class1.cs" />
-    <Compile Include="Interface\Class1.cs" />
-    <Compile Include="Job\Class1.cs" />
-    <Compile Include="Models\Class1.cs" />
+    <Compile Include="Common\ColumnDataType.cs" />
+    <Compile Include="Common\JobType.cs" />
+    <Compile Include="Common\TableConfigType.cs" />
+    <Compile Include="Config\AppConfig.cs" />
+    <Compile Include="Config\ColumnConfig.cs" />
+    <Compile Include="Config\SourceConfig.cs" />
+    <Compile Include="Config\TableConfig.cs" />
+    <Compile Include="Interface\ITransferDBTask.cs" />
+    <Compile Include="Job\BaseJob.cs" />
+    <Compile Include="Job\Job_ClearLog.cs" />
+    <Compile Include="Models\ConfigClearLog.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utils\ConvertExtensions.cs" />
     <Compile Include="Utils\ConvertHelper.cs" />
     <Compile Include="Utils\CustomModelInfo.cs" />
+    <Compile Include="Utils\DalFactory.cs" />
+    <Compile Include="Utils\FileHelp.cs" />
+    <Compile Include="Utils\GlobalObject.cs" />
+    <Compile Include="Utils\LableExtension.cs" />
+    <Compile Include="Utils\Log.cs" />
+    <Compile Include="Utils\ReadConfig.cs" />
+    <Compile Include="Utils\ReflectFactory.cs" />
+    <Compile Include="Utils\ReflectionDelegated.cs" />
+    <Compile Include="Utils\RichTextBoxExtension.cs" />
+    <Compile Include="Utils\UtilsConvert.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

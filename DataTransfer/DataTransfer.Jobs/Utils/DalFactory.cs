@@ -14,9 +14,4 @@ namespace DataTransfer.Jobs.Utils
             return DataBaseFactory.GreateDataBaseFactory(DBSource.Connstr, DBSource.DBType);
         }
     }
-    public class DatabaseSource
-    {
-        public string Connstr { get; set; }
-        public DataBaseType DBType;
-    }
 }
